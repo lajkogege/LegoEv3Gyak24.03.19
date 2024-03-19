@@ -51,7 +51,12 @@ class Feladatok():
 def eslofeladat(self):
     #Mért értékek
     #fekete vonal:6
-    #asztal lap:46 
+    #asztal lap:46 öszead osztva 2= 46+19/2=32.5
     #asztal széle felszin:19
     #asztaltól lefelé:0
-    
+
+    #reflection méri meg az  értéket
+    ut=(71+21)/2
+    while self.cs.reflection() >ut
+        self.robot.drive(100,0)
+    self.robot.stop(Stop.BRAKE)
