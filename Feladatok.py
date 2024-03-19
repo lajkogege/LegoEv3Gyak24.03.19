@@ -68,3 +68,13 @@ class Feladatok():
     def masodikfeladat(self):
         #ujra inditotom a stoppert
         self.ido.reset() 
+        ut=(46+19)/2
+        while self.cs.reflection() >ut:
+            self.robot.drive(100,0)
+            #print("visszaver fény:",self.cs.reflection(),".")
+        self.robot.stop(Stop.BRAKE)
+        eleteltIdo=self.ido.time()
+        #aktuális érték visszaadás
+        self.robot.drive(-100,0) #hátra
+        wait(eleteltIdo)
+        self.robot.stop(Stop.BRAKE)

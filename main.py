@@ -14,4 +14,5 @@ oraifeladat.aku()
 
 oraifeladat.csipog()
 
-oraifeladat.elsofeladat()
+#oraifeladat.elsofeladat()
+oraifeladat.masodikfeladat()
