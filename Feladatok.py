@@ -38,8 +38,8 @@ class Feladatok():
             else:
                 self.jm.run(200)
                 self.bm.run(100)
-
-    def aku(self)://ki íratjuk az akumlátor feszültségét és áramerősségét
+#ki íratjuk az akumlátor feszültségét és áramerősségét
+    def aku(self): 
         volt =self.ev3.battery.voltage()/1000
         amper=self.ev3.battery.current()/1000
         print("A feszültség értéke: " + str(volt)+"V.")
