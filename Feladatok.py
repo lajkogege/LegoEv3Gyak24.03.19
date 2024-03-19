@@ -80,6 +80,6 @@ class Feladatok():
         self.robot.stop(Stop.BRAKE)
     
     def harmadikfeladat(self):
-        while self.us.distance()>14:
+        while self.us.distance()>140:
             self.robot.drive(self.us.distance(),0)
         self.robot.stop(Stop.BRAKE)
