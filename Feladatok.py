@@ -47,3 +47,11 @@ class Feladatok():
         self.ev3.screen.print("A feszültség \nértéke: " + str(volt)+"V.")
         self.ev3.screen.print("Az áramerrőség: \n"+ str(amper)+"A.")
         wait(2000)
+
+def eslofeladat(self):
+    #Mért értékek
+    #fekete vonal:6
+    #asztal lap:46 
+    #asztal széle felszin:19
+    #asztaltól lefelé:0
+    
