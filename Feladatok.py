@@ -44,3 +44,6 @@ class Feladatok():
         amper=self.ev3.battery.current()/1000
         print("A feszültség értéke: " + str(volt)+"V.")
         print("Az áramerrőség:" + str(amper)+"A.")
+        self.ev3.screen.print("A feszültség \nértéke: " + str(volt)+"V.")
+        self.ev3.screen.print("Az áramerrőség: \n"+ str(amper)+"A.")
+        wait(2000)
