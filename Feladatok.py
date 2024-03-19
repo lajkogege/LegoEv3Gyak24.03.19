@@ -78,3 +78,8 @@ class Feladatok():
         self.robot.drive(-100,0) #hátra
         wait(eleteltIdo)
         self.robot.stop(Stop.BRAKE)
+    
+    def harmadikfeladat(self):
+        while self.us.distance()>10:
+            self.robot.drive(self.us.distance(),0)
+        self.robot.stop(Stop.BRAKE)
